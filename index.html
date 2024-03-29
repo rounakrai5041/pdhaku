@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="./styles1.css">
+        <title>Rounak X Pdhaku❤️</title>
+        
+    </head> 
+    <body>
+        <div class="container">
+            <div >
+                <h1 class = "header_text">Hello Pdhaku✨...🤖i am webPage made by</h1>
+                <p class = "header_text"> mr. Rounak himself so, to move ahead</p>
+                <p class = "header_text">first tell me soapy🧼 pics kb tk bhejogi...?</p>
+            </div>
+            <div class="gif_container">
+                <img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExdzRocWU5YzA4eG9vNnhoMmlrbmp4aHdqODNqNGFlZjAybWhtbXE2YiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/PwxCs9Qhzr32brWJpD/giphy.gif" alt="Cute animated illustration">
+            </div>
+            <div class = "buttons">
+                <button class="btn" id = "yesButton" onclick="nextPage()">Aaj Shaam Tk</button>
+                <button class="btn" id="noButton" onmouseover="moveButton()" onclick="moveButton()">Milne K Bad</button>
+                <script>
+                    function nextPage() {
+                        window.location.href = "index3.html";
+                    }
+                    
+                    function moveButton() {
+                        var x = Math.random() * (window.innerWidth - document.getElementById('noButton').offsetWidth) - 85;
+                        var y = Math.random() * (window.innerHeight - document.getElementById('noButton').offsetHeight) - 48;
+                        document.getElementById('noButton').style.left = `${x}px`;
+                        document.getElementById('noButton').style.top = `${y}px`;
+                    }
+                </script> 
+            </div>
+        </div>
+       
+    </body> 
+</html>
